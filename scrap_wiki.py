@@ -18,8 +18,19 @@ url_lion_or = 'https://en.wikipedia.org/wiki/Golden_Lion'
 url_lion_argent = 'https://en.wikipedia.org/wiki/Silver_Lion'
 url_venice_gj = 'https://en.wikipedia.org/wiki/Grand_Jury_Prize_(Venice_Film_Festival)'
 
+url_req = request.urlopen(url_academy_bf).read()
+wiki_page = bs4.BeautifulSoup(url_req, "lxml")
 
-#fonction qui prend en ergument le URL et qui ressort le data_frame avec les tableaux correspondants 
+
+
+#fonction qui prend en argument le URL et qui ressort le data_frame avec les tableaux correspondants 
 
 def scrapper_wiki(url): 
-    
+    url_req = request.urlopen(url).read()
+    wiki_page = bs4.BeautifulSoup(url_req, "lxml")
+
+
+
+
+
+
