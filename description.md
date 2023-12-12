@@ -1,5 +1,4 @@
-Objectifs:
-
+###Objectifs:###
 Faire un algorithme qui recommande des films à partir d'un film choisi. 
 
 Feuille de route: 
@@ -28,10 +27,6 @@ https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/
 
 Etape 3: 
 Implémentation - faire une comparaison des différents algortihmes, justifier nos choix 
-
-
-
-
 
 
 
