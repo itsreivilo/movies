@@ -1,5 +1,4 @@
-Objectifs:
-
+###Objectifs:###
 Faire un algorithme qui recommande des films à partir d'un film choisi. 
 
 Feuille de route: 
@@ -19,9 +18,19 @@ Etape 2: Documentation sur les algorithmes de recherche
 
 Liste de lecture: 
 
+- more general articles :
+https://itnext.io/what-are-the-top-recommendation-engine-algorithms-used-nowadays-646f588ce639
+- a bit more scientific : 
+https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada
+https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/
+
 
 Etape 3: 
 Implémentation - faire une comparaison des différents algortihmes, justifier nos choix 
+
+
+
+
 
 
 
