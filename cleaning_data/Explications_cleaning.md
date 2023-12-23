@@ -6,4 +6,10 @@ Nous voulons récupérer ue base de données unique à la fin qui aura la forme 
 * La colonne Studio est le studio de production (si mentionné)
 * La colonne Award_mains est la variable qui enregistre si le film a été nominé ou a gagné à la compétition plus "mainstream", plus commune telle que Academy Awards ou le prix César. La variable prendra la valeur 0 si le film n'a pas été nominé ni a gagné, 1 s'il a été nominé et 2 s'il a gagné.
 * Award_mains_cat enregistre la catégorie dans laquelle le film a été nominé/qu'il a remporté
-* De même que pour Award_mains, Award_fest enregistre si le film a été nominé ou a gagné dans la compétition d'un des grands festivals - Cannes et Venise. 
+* De même que pour Award_mains, Award_fest enregistre si le film a été nominé ou a gagné dans la compétition d'un des grands festivals - Cannes et Venise.
+
+
+Bases nettoyées:
+
+ac_bd 
+ac_bc 
