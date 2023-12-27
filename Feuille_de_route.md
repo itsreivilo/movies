@@ -1,7 +1,8 @@
-###Objectifs:###
-Faire un algorithme qui recommande des films à partir d'un film choisi. 
+# Feuille de route pour notre projet (approximative) 
+### Objectifs
+Faire un algorithme qui recommande des films à partir d'un film choisi
 
-Feuille de route: 
+### Feuille de route: 
 
 Etape 1: récupération de données 
 
