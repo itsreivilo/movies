@@ -32,3 +32,5 @@ Voici la liste des dossiers et la description des fichiers pour comprendre notre
 * modeliser
 
 ## Documentation et références 
+[Build your first reco system](https://python.plainenglish.io/tmdb-streamlit-build-your-own-movie-recommendation-system-f2ffbca63d11)
+
