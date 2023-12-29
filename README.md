@@ -13,7 +13,7 @@ Nous avons décidé d'utiliser à la fois une API - The movie data base, ou TMDB
 
 Nous avons completé cette base par une étape de web scrapping sur Wikipédia des tables qui rescencent les nominations aux différentes catégories pour les compétitions de cinéma prestigieuses - les Oscars, les Césars et les festivals - Cannes et Venise. Les catégories concernées sont la meilleure cinématographie, le meilleur film et le meilleur réalisteur pour les Oscars, le meilleur réalisateur et le meilleur film pour les Césars, la palme d'or le grand prix et le prix du jury pour les Cannes, et lion d'or, lion d'argent et le grand prix du jury pour Venise. 
 ### Etape 2 - nettoyage et fusion 
-Après avoir finaliser la partie récupération, nous sommes passés à l'étape du nettoyage des données. En effet, les bases récupérées sur l'API 
+Après avoir fini la récupération, nous sommes passés à l'étape du nettoyage des données. En effet, les bases récupérées sur l'API 
 
 En ce qui concerne les tables scrappées sur Wikipédia, le nettoyage a été particulièrement laborieux. En particulier, le format différent de chaque table et page sur Wikipédia nous a forcés à reprendre chaque catégorie pour chaque compétition une à une, et supprimer certaines données manuellement. Nous avons également créé des variables binaires (award_mains et award_fest) dans cette partie pour enregistrer la nomination dans l'une des catégories et pouvoir l'exploiter dans nos analyses. 
 
