@@ -9,25 +9,29 @@ Nous pensons que les films qui sont recompensés dans ce type de concours ont de
 
 ## Les étapes du projet 
 ### Etape 1 - récupération des données 
-Nous avons décidé d'utiliser à la fois une API - The movie data base, ou TMDB, pour récupérer une base de données conséquente et exhaustive des 10 000 films les plus populaires. Nous avons récupéré une clé pour 
+Nous avons décidé d'utiliser à la fois une API - The movie data base, ou TMDB, pour récupérer une base de données conséquente et exhaustive des 10 000 films les plus populaires. Pour cela, nous nous sommes inscrits afin de recevoir une clé nous permettant de faire des requêtes à l'API de TMDB. Grâce à cette clé, nous avons pu récupérer les numéros d'identification des 10 000 films les plus populaires sur le site, puis à partir de ces numéros, nous avons pu pour chaque film récupérer les informations propres au film. 
 
 Nous avons completé cette base par une étape de web scrapping sur Wikipédia des tables qui rescencent les nominations aux différentes catégories pour les compétitions de cinéma prestigieuses - les Oscars, les Césars et les festivals - Cannes et Venise. Les catégories concernées sont la meilleure cinématographie, le meilleur film et le meilleur réalisteur pour les Oscars, le meilleur réalisateur et le meilleur film pour les Césars, la palme d'or le grand prix et le prix du jury pour les Cannes, et lion d'or, lion d'argent et le grand prix du jury pour Venise. 
+
 ### Etape 2 - nettoyage et fusion 
-Après avoir fini la récupération, nous sommes passés à l'étape du nettoyage des données. En effet, les bases récupérées sur l'API 
+Après avoir fini la récupération, nous sommes passés à l'étape du nettoyage des données. En effet, la base récupérée grâce à l'API le nécessitait. Tout d'abord, nous avons remarqué qu'un certain nombre de films apparaissaient plusieurs fois (les enlever tous nous a amené à obtenir une base d'environ 9 200 films uniques). Nous avons aussi pu enlever un certain nombre de variables qui ne nous intéressaient pas pour notre projet (comme le lien des affiches de chaque film). Certaines variables étaient encodées en dictionnaire, nous avons donc extrait de celles ci uniquement les informations qui nous intéressaient, grâce aux regular expressions. Nous nous sommes donc retrouvé avec une base d'environ 9 200 filmsavec pour chacun une vingtaine de variables (dont certaines que nous n'allons finalement probablement pas utiliser, mais dont nous aurions pu avoir besoin pour pousser le projet plus loin).
 
 En ce qui concerne les tables scrappées sur Wikipédia, le nettoyage a été particulièrement laborieux. En particulier, le format différent de chaque table et page sur Wikipédia nous a forcés à reprendre chaque catégorie pour chaque compétition une à une, et supprimer certaines données manuellement. Nous avons également créé des variables binaires (award_mains et award_fest) dans cette partie pour enregistrer la nomination dans l'une des catégories et pouvoir l'exploiter dans nos analyses. 
 
 Après avoir finalisé le nettoyage, nous avons joint les deux bases en utilisant le titre de film et l'année de la parution pour les deux tables, pour retrouver une seule et unique base finale sur laquelle nous travaillons pour la visualisation des données et la modélisation. 
+
 ### Visualisation 
-Dans la partie visualisation, en plus de quelques statistiques descriptives de notre dataset, nous avons decidé de travailler avec les wordcloud (nuages de mots) et essayer de suivre une évolution temporelle des budgets de films, ou leur notes moyennes. L'analyse se faisait selo le genre, la nomination dans l'une des catégories de compétitions cinématographiques, la décennie ou l'année. Nous avons également analysé plusieurs synopsis en réalisant des nuages de mots et comprendre la différence entre plusieurs genres en ce termes pour mieux préparer l'étape de la modélisation. 
+Dans la partie visualisation, en plus de quelques statistiques descriptives de notre dataset, nous avons decidé de travailler avec les wordcloud (nuages de mots) et essayer de suivre une évolution temporelle des budgets de films (qui nous permet de mieux visualiser la base de façon générale), et de leur notes moyennes (qui nous est plus utile pour notre projet spécifique). L'analyse se faisait selon le genre, la nomination dans l'une des catégories de compétitions cinématographiques, la décennie ou l'année, ainsi que selon le pays de production et la langue du film. Nous avons également analysé plusieurs synopsis en réalisant des nuages de mots pour comprendre la différence entre plusieurs genres en ce termes pour mieux préparer l'étape de la modélisation. 
+
 ### Modélisation et construction des algorithmes 
 
 ## Navigation dans le dépôt 
 Cette partie a pour objectif de décrire la structure de notre dépôt git pour mieux s'y retrouver. 
 Voici la liste des dossiers et la description des fichiers pour comprendre notre cheminement. 
-* API 
-* wiki_scrap
-* visualiser
+* API - *Comprend la partie correspondant à la récupération des données à partir de l'API de TMDB*
+* wiki_scrap - *Comprend la partie correspondant au scrapping des pages wikipedia de certaines récompenses cinématographiques*
+* cleaning_data - *Comprends le nettoyage des deux bases, et la fusion en une seule et unique base, c'est aussi ici que notre *
+* visualiser - *Comprend la partie visualisation, avec les statistiques descriptives, les nuages de mots et les différents histogrammes*
 * cleaning_data
 * modeliser
 
