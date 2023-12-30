@@ -20,10 +20,10 @@ En ce qui concerne les tables scrappées sur Wikipédia, le nettoyage a été pa
 
 Après avoir finalisé le nettoyage, nous avons joint les deux bases en utilisant le titre de film et l'année de la parution pour les deux tables, pour retrouver une seule et unique base finale sur laquelle nous travaillons pour la visualisation des données et la modélisation. 
 
-### Visualisation 
+### Etape 3 - Visualisation 
 Dans la partie visualisation, en plus de quelques statistiques descriptives de notre dataset, nous avons decidé de travailler avec les wordcloud (nuages de mots) et essayer de suivre une évolution temporelle des budgets de films (qui nous permet de mieux visualiser la base de façon générale), et de leur notes moyennes (qui nous est plus utile pour notre projet spécifique). L'analyse se faisait selon le genre, la nomination dans l'une des catégories de compétitions cinématographiques, la décennie ou l'année, ainsi que selon le pays de production et la langue du film. Nous avons également analysé plusieurs synopsis en réalisant des nuages de mots pour comprendre la différence entre plusieurs genres en ce termes pour mieux préparer l'étape de la modélisation. 
 
-### Modélisation et construction des algorithmes 
+### Etape 4 - Modélisation et construction des algorithmes 
 Notre projet était donc de construire un algorithme de recommandation de films, et plus particulièrement de s'intéresser aux variables correspondant aux prix reçu par le film. Nous souhaitions observer si cette variable pouvait aider à affiner la recommendation. Pour cela, nous avons choisi de nous restreindre à un algorithme "Item-Item", puisque nous n'avons récupéré que les informations liées aux films, et pas du point de vue des utilisateurs (ce qu'un même utilisateur a aimé par exemple). En suivant, et en adaptant la méthode que nous avons trouvé dans un des articles listé plus bas, nous avons ainsi pu construire un algorithme recommendant un certain nombre de film, en fonction soit d'un film, soit d'un mot clé (un genre, un réalisateur, un thème...). Puis nous avons construit un même algorithme, qui lui prennait en compte les prix reçus par un film, afin de pouvoir comparer les recommandations faites suivant les deux méthodes. Bien que loin d'être parfait, nous avons pu obtenir un résultat plutôt satisfaisant, et nous avons aussi pu définir des points qui pourraient être améliorés, ou plus poussées afin d'obtenir un meilleur résultat.
 
 
