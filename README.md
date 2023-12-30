@@ -32,12 +32,12 @@ Notre projet était donc de construire un algorithme de recommandation de films,
 Cette partie a pour objectif de décrire la structure de notre dépôt git pour mieux s'y retrouver. 
 Voici la liste des dossiers et la description des fichiers pour comprendre notre cheminement. 
 * API - *Comprend la partie correspondant à la récupération des données à partir de l'API de TMDB dans le fichier recuperation_API*
-* wiki_scrap - *Compren la partie correspondant au scrapping des pages wikipedia de certaines récompenses cinématographiques dans le fichier fonction_scrapping*
+* wiki_scrap - *Compren la partie correspondant au scrapping des pages wikipedia de certaines récompenses cinématographiques dans le fichier 1_fonction_scrapping*
 * cleaning_data - *Comprend le nettoyage des deux bases, et la fusion en une seule et unique base, qui se trouve dans ce même dossier*
     * le fichier 1_cleaning_API représente la partie nettoyage de la base de données récupérée grâce à l'API
     * 2_cleaning_wiki est l'étape de nettoyage des tables récupérées sur Wikipédia
     * 3_merge_all est le fichier qui permet de lier les deux bases de données en une seule
-* visualiser - *Comprend la partie visualisation, avec les statistiques descriptives, les nuages de mots et les différents histogrammes dans le fichier data_visualisation*
+* visualiser - *Comprend la partie visualisation, avec les statistiques descriptives, les nuages de mots et les différents histogrammes dans le fichier data_vis_avecfix*
 * modeliser - *Comprend la partie modélisation avec le fichier 1_modelisation qui reprend l'article de python.plainenglish (Build your first reco system) et modelisation_avec_machine_learning (non abouti car trop complexe)*
 
 
