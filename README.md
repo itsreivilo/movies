@@ -38,7 +38,7 @@ Voici la liste des dossiers et la description des fichiers pour comprendre notre
     * 2_cleaning_wiki est l'étape de nettoyage des tables récupérées sur Wikipédia
     * 3_merge_all est le fichier qui permet de lier les deux bases de données en une seule
 * visualiser - *Comprend la partie visualisation, avec les statistiques descriptives, les nuages de mots et les différents histogrammes dans le fichier data_vis_avecfix*
-* modeliser - *Comprend la partie modélisation avec le fichier 1_modelisation qui reprend l'article de python.plainenglish (Build your first reco system) et modelisation_avec_machine_learning (non abouti car trop complexe)*
+* modeliser - *Comprend la partie modélisation avec le fichier modelisation_1 qui reprend l'article de python.plainenglish (Build your first reco system) et modelisation_avec_machine_learning (non abouti car trop complexe)*
 
 
 ## Documentation et références 
