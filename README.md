@@ -30,10 +30,10 @@ Cette partie a pour objectif de décrire la structure de notre dépôt git pour 
 Voici la liste des dossiers et la description des fichiers pour comprendre notre cheminement. 
 * API - *Comprend la partie correspondant à la récupération des données à partir de l'API de TMDB*
 * wiki_scrap - *Comprend la partie correspondant au scrapping des pages wikipedia de certaines récompenses cinématographiques*
-* cleaning_data - *Comprends le nettoyage des deux bases, et la fusion en une seule et unique base, c'est aussi ici que notre *
+* cleaning_data - *Comprends le nettoyage des deux bases, et la fusion en une seule et unique base, qui se trouve dans ce même dossier*
 * visualiser - *Comprend la partie visualisation, avec les statistiques descriptives, les nuages de mots et les différents histogrammes*
-* cleaning_data
-* modeliser
+* modeliser - *Comprend la partie modélisation*
+
 
 ## Documentation et références 
 [Build your first reco system](https://python.plainenglish.io/tmdb-streamlit-build-your-own-movie-recommendation-system-f2ffbca63d11)
