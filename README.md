@@ -39,6 +39,8 @@ Voici la liste des dossiers et la description des fichiers pour comprendre notre
 
 
 ## Documentation et références 
-https://itnext.io/what-are-the-top-recommendation-engine-algorithms-used-nowadays-646f588ce639
+[What are today’s top recommendation engine algorithms?](https://itnext.io/what-are-the-top-recommendation-engine-algorithms-used-nowadays-646f588ce639)
+[Recommendation system](https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/)
+[Introduction to recommender systems](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada)
 [Build your first reco system](https://python.plainenglish.io/tmdb-streamlit-build-your-own-movie-recommendation-system-f2ffbca63d11)
 
